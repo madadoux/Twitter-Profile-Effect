@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9zp-6A-9vX">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Profile-->
+        <scene sceneID="lym-KA-EEG">
+            <objects>
+                <viewController storyboardIdentifier="profileVC" id="9zp-6A-9vX" customClass="VCProfile" customModule="Beatiful_Profile_Effect" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IlF-cv-IoH"/>
+                        <viewControllerLayoutGuide type="bottom" id="gCH-Bm-09U"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DGc-L8-5Up">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="900"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d24-xn-dU7" userLabel="Header">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="150"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jane Stormtrooper" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Um-Hx-fEm">
+                                        <rect key="frame" x="226.5" y="104" width="147.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="centerX" secondItem="4Um-Hx-fEm" secondAttribute="centerX" id="L1v-JI-dyJ"/>
+                                    <constraint firstItem="4Um-Hx-fEm" firstAttribute="top" secondItem="d24-xn-dU7" secondAttribute="top" constant="104" id="oY5-zc-wC1"/>
+                                    <constraint firstAttribute="height" constant="150" id="vEa-KW-IpP"/>
+                                </constraints>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AU4-u1-3Kk" userLabel="Scrollview">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="900"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="0sl-Py-rhA">
+                                        <rect key="frame" x="222" y="93" width="156.5" height="120.5"/>
+                                        <subviews>
+                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="XYH-9S-l2a" userLabel="AvatarImage" customClass="AvatarImageView" customModule="karkazon" customModuleProvider="target">
+                                                <rect key="frame" x="38" y="0.0" width="80" height="80"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="MZI-ES-hHC"/>
+                                                    <constraint firstAttribute="height" constant="80" id="Mnp-d3-zxx"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jane Stormtrooper" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dKG-Na-7Bn">
+                                                <rect key="frame" x="0.0" y="80" width="156.5" height="21.5"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="18"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@bitwaker" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kom-Sb-WFo" userLabel="TwitterUsername">
+                                                <rect key="frame" x="41" y="101.5" width="74" height="19"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dfl-Wk-b3c" userLabel="Spacer">
+                                        <rect key="frame" x="0.0" y="250" width="600" height="800"/>
+                                        <subviews>
+                                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MsM-eX-Zbf">
+                                                <rect key="frame" x="0.0" y="0.0" width="600" height="800"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="800" id="lph-So-XXy"/>
+                                                </constraints>
+                                            </containerView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="MsM-eX-Zbf" secondAttribute="bottom" id="E0r-ts-Gi9"/>
+                                            <constraint firstItem="MsM-eX-Zbf" firstAttribute="top" secondItem="dfl-Wk-b3c" secondAttribute="top" id="JFe-2c-8Qr"/>
+                                            <constraint firstAttribute="trailing" secondItem="MsM-eX-Zbf" secondAttribute="trailing" id="Lnt-7K-9NQ"/>
+                                            <constraint firstItem="MsM-eX-Zbf" firstAttribute="leading" secondItem="dfl-Wk-b3c" secondAttribute="leading" id="fOH-tb-BHN"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T2B-ig-ymf">
+                                        <rect key="frame" x="20" y="0.0" width="34" height="30"/>
+                                        <state key="normal" title="Back"/>
+                                        <connections>
+                                            <action selector="back" destination="9zp-6A-9vX" eventType="touchUpInside" id="rEr-zG-IKU"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="dfl-Wk-b3c" firstAttribute="leading" secondItem="AU4-u1-3Kk" secondAttribute="leading" id="1Vs-Di-u2n"/>
+                                    <constraint firstItem="0sl-Py-rhA" firstAttribute="centerX" secondItem="AU4-u1-3Kk" secondAttribute="centerX" id="Acs-ij-apb"/>
+                                    <constraint firstItem="0sl-Py-rhA" firstAttribute="top" secondItem="AU4-u1-3Kk" secondAttribute="top" constant="93" id="Azu-Y5-YFE"/>
+                                    <constraint firstItem="dfl-Wk-b3c" firstAttribute="top" secondItem="AU4-u1-3Kk" secondAttribute="top" constant="250" id="TsZ-Y7-bSI"/>
+                                    <constraint firstAttribute="trailing" secondItem="dfl-Wk-b3c" secondAttribute="trailing" id="UYj-QC-UdW"/>
+                                    <constraint firstItem="T2B-ig-ymf" firstAttribute="leading" secondItem="AU4-u1-3Kk" secondAttribute="leading" constant="20" id="ag9-Ik-Lg9"/>
+                                    <constraint firstAttribute="bottom" secondItem="dfl-Wk-b3c" secondAttribute="bottom" constant="37" id="brE-G9-dHl"/>
+                                    <constraint firstItem="T2B-ig-ymf" firstAttribute="top" secondItem="AU4-u1-3Kk" secondAttribute="top" id="kqm-Uu-PLV"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="d24-xn-dU7" firstAttribute="top" secondItem="IlF-cv-IoH" secondAttribute="bottom" constant="-20" id="2na-T3-sBr"/>
+                            <constraint firstItem="gCH-Bm-09U" firstAttribute="top" secondItem="AU4-u1-3Kk" secondAttribute="bottom" id="6hU-cN-3OV"/>
+                            <constraint firstAttribute="width" secondItem="dfl-Wk-b3c" secondAttribute="width" id="9MW-vL-uo4"/>
+                            <constraint firstAttribute="trailing" secondItem="AU4-u1-3Kk" secondAttribute="trailing" id="DfC-e4-O2e"/>
+                            <constraint firstItem="AU4-u1-3Kk" firstAttribute="top" secondItem="IlF-cv-IoH" secondAttribute="bottom" constant="-20" id="JCQ-PL-jf6"/>
+                            <constraint firstItem="d24-xn-dU7" firstAttribute="leading" secondItem="DGc-L8-5Up" secondAttribute="leading" id="k59-7t-hST"/>
+                            <constraint firstItem="AU4-u1-3Kk" firstAttribute="leading" secondItem="DGc-L8-5Up" secondAttribute="leading" id="uny-Qp-rKj"/>
+                            <constraint firstAttribute="trailing" secondItem="d24-xn-dU7" secondAttribute="trailing" id="vG0-aS-9CI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="nAC-H2-Gah"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="600" height="900"/>
+                    <connections>
+                        <outlet property="avatarImage" destination="XYH-9S-l2a" id="7Ag-nF-vV8"/>
+                        <outlet property="header" destination="d24-xn-dU7" id="bMt-55-kpI"/>
+                        <outlet property="headerLabel" destination="4Um-Hx-fEm" id="Tki-Aw-li6"/>
+                        <outlet property="scrollView" destination="AU4-u1-3Kk" id="jsK-ir-uY4"/>
+                        <outlet property="userName" destination="dKG-Na-7Bn" id="IGZ-mg-MOe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kKb-zZ-F7R" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1435.2" y="-1111.8440779610196"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="profile" width="175" height="175"/>
+    </resources>
+</document>
