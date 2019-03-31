@@ -14,7 +14,6 @@ let distance_W_LabelHeader:CGFloat = 35.0 // The distance between the bottom of 
 class User: NSObject {
     var name : String?
     var image: UIImage?
-    var hasImage : Bool! = true
     var photoUrl: String?
     var id: CLong?
 }
@@ -32,7 +31,6 @@ class VCProfile: UIViewController, UIScrollViewDelegate {
     
     var headerImageView:UIImageView!
     var headerBlurImageView:UIImageView!
-    var blurredHeaderImageView:UIImageView?
     override func awakeFromNib() {
         super.awakeFromNib()
     }
@@ -89,7 +87,7 @@ class VCProfile: UIViewController, UIScrollViewDelegate {
         // PULL DOWN -----------------
         
         if offset < 0 {
-            // scaling image by offset calculated factor after translating it to fit the new size for ex, when you scale image on view the upper top of it changing(goes up) resulting a mispositioning so all we do is tranlate it down to match the new scale keeping upper top = upper top of super view
+            // scaling image by offset calculated factor after translating it to fit the new size for ex, when you scale image on view the upper top of it changing(goes up) resulting a mispositioning so all we do is translate it down to match the new scale keeping upper top = upper top of super view
             
             
             let headerScaleFactor:CGFloat = -(offset) / header.bounds.height
